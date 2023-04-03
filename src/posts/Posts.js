@@ -1,9 +1,14 @@
 import './Posts.css'
-
+import Post from './Post.js'
 export default function Posts() {
   return (
     <div className='posts'>
-      hi
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
     </div>
   )
 }

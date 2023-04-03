@@ -7,6 +7,7 @@
     align-items: center;
     background-color: rgb(236, 247, 253);
     font-family: 'Poppins', sans-serif;
+    z-index: 999;
 }
 
 .topLeft , .topRight{
