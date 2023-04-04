@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import '../images/13935005400_0a6452b340_b.jpg' 
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -13,10 +14,16 @@ export default function Navbar() {
         </div>
         <div className='topCenter'>
             <ul className='topList'>
-                <li className='topListItem'>Home</li>
-                <li className='topListItem'>About</li>
+                <li className='topListItem'>
+                    <Link  to='/' style={{textDecoration:"none",color:"black"}}>Home</Link>
+                </li>
+                <li className='topListItem'>
+                    <Link  to='/post/:postId' style={{textDecoration:"none",color:"black"}}>Post</Link>
+                </li>
                 <li className='topListItem'>Contact</li>
-                <li className='topListItem'>Write</li>
+                <li className='topListItem'>
+                    <Link  to='/write' style={{textDecoration:"none",color:"black"}}>Write</Link>
+                </li>
                 <li className='topListItem'>Logout</li>
             </ul>
         </div>
